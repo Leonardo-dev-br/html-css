@@ -58,26 +58,47 @@ section{
     font-size: 5vw;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section.normal {
     background-color: rgb(238, 232, 232);
     color: black;
 
 }
 
+section.imagem{
+    background-color: rgb(99, 94, 94);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.692); /*coloca sombra na caixa, para dentro*/
+    background-attachment: fixed;
+}
+
 section.imagem > p {
     display: inline-block;
     padding: 5px;
     background-color: rgba(22, 22, 22, 0.486); 
+    text-shadow: 1px 0px 1px black;
 
 }
 
-section.imagem{
-    background-color: rgb(99, 94, 94);
-    color: white;
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
 }
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+}
+
 
 footer {
     background-color: black;
+    color: white;
     text-align: center;
     padding: 10px;
 }
